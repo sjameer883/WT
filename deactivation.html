@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Deactivation Form</title>
+<style>
+  fieldset{
+    width: 30%;
+    margin-left: 35%;
+    border-radius: 0.3cm;
+  }
+  legend{
+    font-weight: bold;
+    font-size: medium;
+  }
+  input[type=text]{
+    margin-bottom: 0.3cm;
+  }
+  input[type=email]{
+     margin-left: 0.9cm;
+     margin-bottom: 0.3cm;
+  }
+    label{
+        font-weight: bold;
+    }
+    input[type=submit]{
+        background-color:#007bff;
+        color:#fff;
+        border: #fff;
+        border-radius: 0.1cm;
+        padding: 10px;
+    }
+    input[type=password]{
+     margin-bottom: 0.3cm;
+     margin-left: 0.25cm;
+  }
+</style>
+</head>
+<body>
+    <fieldset>
+        <legend>Account Deactivation Form</legend>
+  <p>Please provide the following information to request account deactivation.</p>
+  <form action="login.html">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required style="margin-right: 1.5cm;"><br>
+    <label for="username">User Name:</label>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <label for="email" >Email:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="reason">Reason for Deactivation:</label><br>
+    <textarea id="reason" name="reason" required style="height: 100px; width:10cm;"></textarea><br>
+
+    <input type="submit" value="Submit">
+      <input type="Reset" style=" padding: 9px; border: none;">
+
+  </form>
+</fieldset>
+</body>
+</html>

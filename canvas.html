@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Canvas Webpage</title>
+</head>
+<body>
+    <canvas id="Mycanvas" height="500" width="500" style="border: 2px solid black;margin-left: 28%;"></canvas>
+    <script >
+        var canvas=document.getElementById("Mycanvas");
+        var c=canvas.getContext("2d");
+         c.font="20px Italic";
+        c.fillStyle="Red";
+        c.fillText("IT",200,100);
+        c.font="20px Arial";
+        c.fillStyle="blue";
+        c.fillText("Web Technologies",130,130);
+        c.fillStyle="red";
+        c.fillRect(150,150,150,100);
+        c.stroke();
+        c.beginPath();
+    </script>
+    
+</body>
+</html>
